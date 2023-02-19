@@ -8,39 +8,39 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyApplication
-build_property.ProjectDir = C:\Users\kolya\OneDrive\Desktop\C#\MyApplication\MyApplication\
+build_property.ProjectDir = C:\github\MyApplication\MyApplication\
 
-[C:/Users/kolya/OneDrive/Desktop/C\#/MyApplication/MyApplication/App.xaml]
+[C:/github/MyApplication/MyApplication/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/kolya/OneDrive/Desktop/C\#/MyApplication/MyApplication/AppShell.xaml]
+[C:/github/MyApplication/MyApplication/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/kolya/OneDrive/Desktop/C\#/MyApplication/MyApplication/CalculatorPage.xaml]
+[C:/github/MyApplication/MyApplication/CalculatorPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.CalculatorPage.xaml
 build_metadata.AdditionalFiles.TargetPath = CalculatorPage.xaml
 build_metadata.AdditionalFiles.RelativePath = CalculatorPage.xaml
 
-[C:/Users/kolya/OneDrive/Desktop/C\#/MyApplication/MyApplication/ProgressBarPage.xaml]
+[C:/github/MyApplication/MyApplication/ProgressBarPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.ProgressBarPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ProgressBarPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ProgressBarPage.xaml
 
-[C:/Users/kolya/OneDrive/Desktop/C\#/MyApplication/MyApplication/Resources/Styles/Colors.xaml]
+[C:/github/MyApplication/MyApplication/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/kolya/OneDrive/Desktop/C\#/MyApplication/MyApplication/Resources/Styles/Styles.xaml]
+[C:/github/MyApplication/MyApplication/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

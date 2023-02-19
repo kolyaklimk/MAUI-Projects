@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kolya\\OneDrive\\Desktop\\C#\\MyApplication\\MyApplication\\MyApplication.csproj": {}
+    "C:\\github\\MyApplication\\MyApplication\\MyApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kolya\\OneDrive\\Desktop\\C#\\MyApplication\\MyApplication\\MyApplication.csproj": {
+    "C:\\github\\MyApplication\\MyApplication\\MyApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kolya\\OneDrive\\Desktop\\C#\\MyApplication\\MyApplication\\MyApplication.csproj",
+        "projectUniqueName": "C:\\github\\MyApplication\\MyApplication\\MyApplication.csproj",
         "projectName": "MyApplication",
-        "projectPath": "C:\\Users\\kolya\\OneDrive\\Desktop\\C#\\MyApplication\\MyApplication\\MyApplication.csproj",
+        "projectPath": "C:\\github\\MyApplication\\MyApplication\\MyApplication.csproj",
         "packagesPath": "C:\\Users\\kolya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kolya\\OneDrive\\Desktop\\C#\\MyApplication\\MyApplication\\obj\\",
+        "outputPath": "C:\\github\\MyApplication\\MyApplication\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

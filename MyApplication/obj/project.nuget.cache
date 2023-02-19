@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GspTcin/0J8ZEpdk7kcTAYdAndxvVyJX3u2vBy4Kp8OQfmJXAHnanxToO9u4GTwP4ZNyfj1YTdH9dvoHyrKW3A==",
+  "dgSpecHash": "KqRsrxeX6tQHJNPLzX0pfsAIGtIrfp24VFXxEkHloGFO7IjaVQKgUqH30k18J/9aLsfBH6ZBDewtfkVGKZp8MA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kolya\\OneDrive\\Desktop\\C#\\MyApplication\\MyApplication\\MyApplication.csproj",
+  "projectFilePath": "C:\\github\\MyApplication\\MyApplication\\MyApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kolya\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\kolya\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

@@ -1,1 +1,1 @@
-C:\Users\kolya\OneDrive\Desktop\C#\MyApplication\MyApplication\MyApplication.csproj;x64
+C:\github\MyApplication\MyApplication\MyApplication.csproj;x64
