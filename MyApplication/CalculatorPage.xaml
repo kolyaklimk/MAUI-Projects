@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApplication.CalculatorPage"
+             BackgroundColor="#202020">
+
+    <Grid ColumnSpacing="6" RowSpacing="6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="workSpace" FontSize="32" Text = "0"
+               CharacterSpacing = "2" FontAttributes = "Bold" 
+               HorizontalOptions="End" VerticalOptions="Center"
+               Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
+
+        <Label x:Name="secondSpace" FontSize="22" Text="" TextColor="Gray"
+               CharacterSpacing = "2" FontAttributes = "Bold"
+               HorizontalOptions="End" VerticalOptions="Center"
+               Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"/>
+
+        <Button x:Name="button0" Text="0" FontSize="22" BorderWidth="0" 
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="1" Grid.Row="8"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="button1" Text="1" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="0" Grid.Row="7"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="button2" Text="2" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="1" Grid.Row="7"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="button3" Text="3" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="2" Grid.Row="7"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="button4" Text="4" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White" 
+                Grid.Column="0" Grid.Row="6"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="button5" Text="5" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="1" Grid.Row="6"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="button6" Text="6" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="2" Grid.Row="6"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="button7" Text="7" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="0" Grid.Row="5"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="button8" Text="8" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="1" Grid.Row="5"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="button9" Text="9" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="2" Grid.Row="5"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonPlusAndMinus" Text="+/-" FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="0" Grid.Row="8"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonComma" Text="," FontSize="22" BorderWidth="0"
+                BackgroundColor="#3b3b3b" TextColor="White"
+                Grid.Column="2" Grid.Row="8"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonPercent" Text="%" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="0" Grid.Row="3"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonSolve" Text="=" FontSize="22" BorderWidth="0"
+                BackgroundColor="#4cc2ff" TextColor="#202020"
+                Grid.Column="4" Grid.Row="8"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonPlus" Text="+" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="3" Grid.Row="7"
+                Clicked="OnButtonClicked"/>
+
+        <Button x:Name="buttonMinus" Text="-" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="3" Grid.Row="6"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonMul" Text="*" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="3" Grid.Row="5"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonDiv" Text="/" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="3" Grid.Row="4"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonDel" Text="del" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="3" Grid.Row="3"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonDivX" Text="1/x" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="0" Grid.Row="4"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonPow2" Text="x^2" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="1" Grid.Row="4"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonPowHalf" Text="x^1/2" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="2" Grid.Row="4"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonCE" Text="CE" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="1" Grid.Row="3"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonC" Text="C" FontSize="22" BorderWidth="0"
+                BackgroundColor="#323232" TextColor="White"
+                Grid.Column="2" Grid.Row="3"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonMC" Text="MC" FontSize="22" BorderWidth="0" IsEnabled="False"
+                BackgroundColor="#202020" TextColor="Gray"
+                Grid.Column="0" Grid.Row="2"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonMR" Text="MR" FontSize="22" BorderWidth="0" IsEnabled="False"
+                BackgroundColor="#202020" TextColor="Gray" 
+                Grid.Column="1" Grid.Row="2"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonMPlus" Text="M+" FontSize="22" BorderWidth="0"
+                BackgroundColor="#202020" TextColor="White"
+                Grid.Column="2" Grid.Row="2"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonMMinus" Text="M-" FontSize="22" BorderWidth="0"
+                BackgroundColor="#202020" TextColor="White"
+                Grid.Column="3" Grid.Row="2"
+                Clicked="OnButtonClicked" />
+
+        <Button x:Name="buttonPow" Text="x^y" FontSize="22" BorderWidth="0"
+                BackgroundColor="#202020" TextColor="White"
+                Grid.Column="0" Grid.Row="1"
+                Clicked="OnButtonClicked" />
+    </Grid>
+
+</ContentPage>
