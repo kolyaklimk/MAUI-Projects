@@ -16,5 +16,8 @@
     <MauiXaml Update="ProgressBarPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="SQLitePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
   </ItemGroup>
 </Project>

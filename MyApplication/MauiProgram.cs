@@ -1,4 +1,6 @@
-﻿namespace MyApplication;
+﻿using MyApplication.Services;
+
+namespace MyApplication;
 
 public static class MauiProgram
 {
@@ -12,7 +14,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-
-		return builder.Build();
+		builder.Services.AddTransient<IDbService, SQLiteService>();
+        return builder.Build();
 	}
 }

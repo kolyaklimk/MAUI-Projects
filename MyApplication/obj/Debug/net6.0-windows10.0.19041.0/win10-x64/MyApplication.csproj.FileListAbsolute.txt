@@ -612,7 +612,6 @@ C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10
 C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.1322.58009.dll
 C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -718,3 +717,10 @@ C:\github\MyApplication\MyApplication\obj\Debug\net6.0-windows10.0.19041.0\win10
 C:\github\MyApplication\MyApplication\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\github\MyApplication\MyApplication\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\github\MyApplication\MyApplication\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.1423.7309.dll
+C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
+C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.nativelibrary.dll
+C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll

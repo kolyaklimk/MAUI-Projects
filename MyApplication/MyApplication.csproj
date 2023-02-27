@@ -49,6 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Update="ProgressBarPage.xaml.cs">
 	    <DependentUpon>ProgressBarPage.xaml</DependentUpon>
 	  </Compile>
@@ -59,6 +63,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ProgressBarPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SQLitePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
