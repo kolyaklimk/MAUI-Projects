@@ -5,7 +5,9 @@
              Title="SQLitePage">
     <VerticalStackLayout>
         <Picker x:Name ="picker" 
-                Title="Choose" BackgroundColor="#3b3b3b"/>
+                Title="Choose" BackgroundColor="#3b3b3b"
+                SelectedIndexChanged="picker_SelectedIndexChanged"/>
+        <CollectionView x:Name="collection" BackgroundColor="#3b3b3b"/>
         <ListView/>
     </VerticalStackLayout>
 </ContentPage>

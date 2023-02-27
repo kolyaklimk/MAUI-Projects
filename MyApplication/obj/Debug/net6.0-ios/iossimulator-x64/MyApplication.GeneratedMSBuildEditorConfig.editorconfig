@@ -22,17 +22,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.AppShell.xam
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/github/MyApplication/MyApplication/CalculatorPage.xaml]
+[C:/github/MyApplication/MyApplication/Pages/Calculator/CalculatorPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.CalculatorPage.xaml
-build_metadata.AdditionalFiles.TargetPath = CalculatorPage.xaml
-build_metadata.AdditionalFiles.RelativePath = CalculatorPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.Pages.Calculator.CalculatorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Calculator\CalculatorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Calculator\CalculatorPage.xaml
 
-[C:/github/MyApplication/MyApplication/ProgressBarPage.xaml]
+[C:/github/MyApplication/MyApplication/Pages/ProgressBar/ProgressBarPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.ProgressBarPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ProgressBarPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ProgressBarPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.Pages.ProgressBar.ProgressBarPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ProgressBar\ProgressBarPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ProgressBar\ProgressBarPage.xaml
+
+[C:/github/MyApplication/MyApplication/Pages/SQLite/SQLitePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.Pages.SQLite.SQLitePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SQLite\SQLitePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SQLite\SQLitePage.xaml
 
 [C:/github/MyApplication/MyApplication/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -45,9 +51,3 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
-
-[C:/github/MyApplication/MyApplication/SQLitePage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MyApplication.SQLitePage.xaml
-build_metadata.AdditionalFiles.TargetPath = SQLitePage.xaml
-build_metadata.AdditionalFiles.RelativePath = SQLitePage.xaml

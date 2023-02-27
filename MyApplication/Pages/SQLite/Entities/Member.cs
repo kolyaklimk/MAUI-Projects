@@ -5,14 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyApplication.Entities
+namespace MyApplication.Pages.SQLite.Entities
 {
-    [Table("SportTeams")]
-    public class SportTeam
+    [Table("Members")]
+    public class Member
     {
         [PrimaryKey, AutoIncrement, Indexed]
-        public int Id { get; set; }
+        [Column("Id")]
+        public int MemberId { get; set; }
         public string Name { get; set; }
-        public string KindOfSport { get; set; }
+        [Indexed]
+        public int SportTeamId { get; set; }
     }
 }
