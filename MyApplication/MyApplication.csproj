@@ -56,6 +56,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\CurrencyConverter\CurrencyConverterPage.xaml.cs">
+	    <DependentUpon>CurrencyConverterPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Pages\ProgressBar\ProgressBarPage.xaml.cs">
 	    <DependentUpon>ProgressBarPage.xaml</DependentUpon>
 	  </Compile>
@@ -65,7 +68,7 @@
 	  <MauiXaml Update="Pages\Calculator\CalculatorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\CurrencyConverter\CurrencyConverter.xaml">
+	  <MauiXaml Update="Pages\CurrencyConverter\CurrencyConverterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\ProgressBar\ProgressBarPage.xaml">

@@ -19,10 +19,10 @@ public static class MauiProgram
 		builder.Services.AddTransient<IDbService, SQLiteService>();
 		builder.Services.AddSingleton<SQLitePage>();
 
-		builder.Services.AddTransient<IRateService, RateService>();
 		builder.Services.AddHttpClient<IRateService, RateService>(opt =>
 			opt.BaseAddress = new Uri("https://www.nbrb.by/api/exrates/rates"));
-		builder.Services.AddSingleton<CurrencyConverter>();
+		builder.Services.AddTransient<IRateService, RateService>();
+		builder.Services.AddSingleton<CurrencyConverterPage>();
 
         return builder.Build();
 	}

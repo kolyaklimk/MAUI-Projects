@@ -12,7 +12,7 @@ namespace MyApplication.Pages.CurrencyConverter.Services
             _httpClient = httpClient;
         }
         public IEnumerable<Rate> GetRates(DateTime date)
-        {
+        {            
             List<Rate> rates = new();
             string message = _httpClient.GetAsync(
                 "https://www.nbrb.by/api/exrates/rates?ondate=" +

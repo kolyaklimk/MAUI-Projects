@@ -7,7 +7,7 @@ using NbrbAPI.Models;
 
 namespace MyApplication.Pages.CurrencyConverter.Services
 {
-    internal interface IRateService
+    public interface IRateService
     {
         IEnumerable<Rate> GetRates(DateTime date);
     }

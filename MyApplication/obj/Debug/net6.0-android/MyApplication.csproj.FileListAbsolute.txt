@@ -1915,3 +1915,5 @@ C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\stamp\_ConvertRes
 C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\android\assets\Microsoft.Extensions.Http.dll
+C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\android\assets\Newtonsoft.Json.dll
