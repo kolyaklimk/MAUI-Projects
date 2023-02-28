@@ -9,14 +9,21 @@
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetPlatformIdentifier)'=='iOS'">
+    <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+    <PlatformTarget>arm64</PlatformTarget>
+  </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="CalculatorPage.xaml">
+    <MauiXaml Update="Pages\Calculator\CalculatorPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="ProgressBarPage.xaml">
+    <MauiXaml Update="Pages\CurrencyConverter\CurrencyConverter.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="SQLitePage.xaml">
+    <MauiXaml Update="Pages\ProgressBar\ProgressBarPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\SQLiteService\SQLitePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

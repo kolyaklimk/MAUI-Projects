@@ -1,5 +1,6 @@
-﻿using MyApplication.Services;
-
+﻿using MyApplication.Pages.SQLiteService.Services;
+using MyApplication.Pages.CurrencyConverter.Services;
+using MyApplication.Pages.CurrencyConverter;
 namespace MyApplication;
 
 public static class MauiProgram
@@ -14,8 +15,15 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+
 		builder.Services.AddTransient<IDbService, SQLiteService>();
-		builder.Services.AddTransient<SQLitePage>();
+		builder.Services.AddSingleton<SQLitePage>();
+
+		builder.Services.AddTransient<IRateService, RateService>();
+		builder.Services.AddHttpClient<IRateService, RateService>(opt =>
+			opt.BaseAddress = new Uri("https://www.nbrb.by/api/exrates/rates"));
+		builder.Services.AddSingleton<CurrencyConverter>();
+
         return builder.Build();
 	}
 }

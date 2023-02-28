@@ -49,24 +49,29 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
 	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 	  <PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.4" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="ProgressBarPage.xaml.cs">
+	  <Compile Update="Pages\ProgressBar\ProgressBarPage.xaml.cs">
 	    <DependentUpon>ProgressBarPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="CalculatorPage.xaml">
+	  <MauiXaml Update="Pages\Calculator\CalculatorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ProgressBarPage.xaml">
+	  <MauiXaml Update="Pages\CurrencyConverter\CurrencyConverter.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="SQLitePage.xaml">
+	  <MauiXaml Update="Pages\ProgressBar\ProgressBarPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\SQLiteService\SQLitePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

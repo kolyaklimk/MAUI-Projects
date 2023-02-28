@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-27T20:09:06.495</Modified>
+      <Modified>2023-02-27T22:23:54.985</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-02-27T20:09:06.103</Modified>
+      <Modified>2023-02-27T22:23:54.562</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MyApplication.runtimeconfig.json">
       <PackagePath>MyApplication.runtimeconfig.json</PackagePath>
-      <Modified>2023-02-27T19:52:42.384</Modified>
+      <Modified>2023-02-27T22:23:54.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\MyApplication\MyApplication\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MyApplication.dll">
       <PackagePath>MyApplication.dll</PackagePath>
-      <Modified>2023-02-27T20:09:05.165</Modified>
+      <Modified>2023-02-27T22:23:53.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\MyApplication\MyApplication\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MyApplication.exe</PackagePath>
-      <Modified>2023-02-27T20:09:05.171</Modified>
+      <Modified>2023-02-27T22:23:53.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kolya\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.14\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1084,7 +1084,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\github\MyApplication\MyApplication\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MyApplication.deps.json">
       <PackagePath>MyApplication.deps.json</PackagePath>
-      <Modified>2023-02-27T20:09:06.363</Modified>
+      <Modified>2023-02-27T22:23:54.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kolya\.nuget\packages\microsoft.maui.controls.ref.win\6.0.552\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
