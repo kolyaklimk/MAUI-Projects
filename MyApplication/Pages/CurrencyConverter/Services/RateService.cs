@@ -23,7 +23,7 @@ namespace MyApplication.Pages.CurrencyConverter.Services
                 if (message.IsSuccessStatusCode)
                 {
                     return JsonSerializer.Deserialize<List<Rate>>(message.Content.ReadAsStream()).
-                        Where(objId => listOfId.Contains(objId.Cur_ID)).ToList();
+                        Where(objId => listOfId.Contains(objId.Cur_ID));
                 }
             }
             return null;
