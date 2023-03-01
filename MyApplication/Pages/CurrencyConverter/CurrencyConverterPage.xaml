@@ -21,7 +21,7 @@
                     MinimumDate="1/1/2000" Grid.Column="1" BackgroundColor="#3b3b3b"
                     VerticalOptions="Center" HorizontalOptions="Center"/>
         <Picker x:Name="pickerCurrency" Grid.Column="1" Grid.Row="1" 
-                BackgroundColor="#3b3b3b" 
+                BackgroundColor="#3b3b3b" Title="Choose currency"
                 VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
                 ItemDisplayBinding="{Binding Cur_Name}" 
                 SelectedIndexChanged="pickerCurrency_SelectedIndexChanged"                

@@ -2,17 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyApplication.SQLitePage"
-             Title="SQLitePage">
+             Title="SQLitePage" BackgroundColor="#202020">
     <VerticalStackLayout>
         <Picker x:Name ="picker" 
-                Title="Choose" BackgroundColor="#202020" HorizontalTextAlignment="Center"   
+                Title="Сhoose" BackgroundColor="#3b3b3b" HorizontalTextAlignment="Center"   
                 SelectedIndexChanged="picker_SelectedIndexChanged"
                 ItemDisplayBinding="{Binding Name}"/>
-        <CollectionView x:Name="collection" BackgroundColor="#3b3b3b">
-            <CollectionView.ItemTemplate>
-                
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        <ListView/>
+        <CollectionView x:Name="collection" BackgroundColor="#3b3b3b"/>
     </VerticalStackLayout>
 </ContentPage>
