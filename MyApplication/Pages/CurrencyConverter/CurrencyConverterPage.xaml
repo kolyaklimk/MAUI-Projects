@@ -39,21 +39,22 @@
             <Entry x:Name="firstEntry" Grid.Column="0" TextChanged="firstEntry_TextChanged"                   
                    HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
                    HorizontalOptions="Fill" VerticalOptions="End" 
-                    BackgroundColor="#3b3b3b" /> 
-            <Label x:Name="firstLabel"  Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start"
-                   Text="USD"/>
+                    BackgroundColor="#3b3b3b" Keyboard="Numeric"/>
+            <Label x:Name="firstLabel"  Grid.Row="1" 
+                   HorizontalOptions="Center" VerticalOptions="Start"/>
             <Label x:Name="solve" Grid.Column="1" Text="=" 
                    HorizontalOptions="Center" VerticalOptions="End"/>
             <Entry x:Name="secondEntry" Grid.Column="3" IsReadOnly="True" BackgroundColor="#3b3b3b"
                    HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-                   HorizontalOptions="Fill" VerticalOptions="End"/>
+                   HorizontalOptions="Fill" VerticalOptions="End" Keyboard="Numeric"/>
             <Label x:Name="secondLabel" Grid.Column="2" Grid.Row="1" 
-                   HorizontalOptions="Center" VerticalOptions="Start"
-                   Text="BYN"/>
-            <Button x:Name="changeMainConverter" Text="Change" 
+                   HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Button x:Name="changeMainConverter" Text="&lt;=>" TextColor="White"
                     Clicked="changeMainConverter_Clicked"
                     VerticalOptions="End" BackgroundColor="#3b3b3b"
                     Grid.Column="1" Grid.Row="1"/>
         </Grid>
+        <Label x:Name="loadLabel" FontSize="30" Grid.Row="4" Grid.Column="1"
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
     </Grid>
 </ContentPage>

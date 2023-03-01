@@ -8,20 +8,28 @@ namespace MyApplication;
 public partial class CurrencyConverterPage : ContentPage
 {
     private readonly IRateService _rateService;
-    private List<Rate> rate = new();
     private Rate buf;
     private bool mainConverter = true;
     public CurrencyConverterPage(IRateService rate)
     {
         InitializeComponent();
         _rateService = rate;
-        calendar.MaximumDate=DateTime.Today;
+        calendar.MaximumDate = DateTime.Today;
     }
 
     private async void calendar_DateSelected(object sender, DateChangedEventArgs e)
     {
-        rate = (await _rateService.GetRates(calendar.Date)).ToList();
-        pickerCurrency.ItemsSource = rate;
+        loadLabel.Text = "Load";
+        var picker = (await _rateService.GetRates(calendar.Date));
+        if (picker == null)
+        {
+            loadLabel.Text = "Error! No internet connection!";
+        }
+        else
+        {
+            pickerCurrency.ItemsSource = picker.ToList();
+            loadLabel.Text = "";
+        }
     }
 
     private void pickerCurrency_SelectedIndexChanged(object sender, EventArgs e)
@@ -40,23 +48,18 @@ public partial class CurrencyConverterPage : ContentPage
     {
         if (buf != null)
         {
-            if (mainConverter)
+            try
             {
-                try
-                {
+                if (mainConverter)
                     secondEntry.Text = (Math.Round(Convert.ToDouble(buf.Cur_OfficialRate.ToString()) *
                     Convert.ToDouble(firstEntry.Text), 4)).ToString();
-                }
-                catch { }
-            }
-            else
-            {
-                try
-                {
+                else
                     secondEntry.Text = (Math.Round(Convert.ToDouble(firstEntry.Text) /
-                        Convert.ToDouble(buf.Cur_OfficialRate.ToString()), 4)).ToString();
-                }
-                catch { }
+                    Convert.ToDouble(buf.Cur_OfficialRate.ToString()), 4)).ToString();
+            }
+            catch
+            {
+                secondEntry.Text = "Error";
             }
         }
     }
@@ -69,18 +72,15 @@ public partial class CurrencyConverterPage : ContentPage
             {
                 secondLabel.Text = (pickerCurrency.SelectedItem as Rate).Cur_Abbreviation;
                 firstLabel.Text = "BYN";
-                secondEntry.Text = "";
-                firstEntry.Text = "";
-                mainConverter = !mainConverter;
             }
             else
             {
                 firstLabel.Text = (pickerCurrency.SelectedItem as Rate).Cur_Abbreviation;
                 secondLabel.Text = "BYN";
-                secondEntry.Text = "";
-                firstEntry.Text = "";
-                mainConverter = !mainConverter;
             }
+            secondEntry.Text = "";
+            firstEntry.Text = "";
+            mainConverter = !mainConverter;
         }
     }
 }

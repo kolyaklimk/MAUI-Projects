@@ -1,6 +1,6 @@
 ﻿using NbrbAPI.Models;
-using System;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 using System.Text.Json;
 
 namespace MyApplication.Pages.CurrencyConverter.Services
@@ -14,21 +14,19 @@ namespace MyApplication.Pages.CurrencyConverter.Services
             _httpClient = httpClient;
         }
         public async Task<IEnumerable<Rate>> GetRates(DateTime date)
-        {            
-            List<Rate> rates = new();
-            var message = new HttpRequestMessage(HttpMethod.Get, 
-                "https://www.nbrb.by/api/exrates/rates?ondate=" + 
-                $"{date:yyyy-M-d}&periodicity=0");
-            message.Headers.Add("Accept", "application/json");
-            var response = await _httpClient.SendAsync(message);
-            //var message = _httpClient.GetAsync(
-            //   "https://www.nbrb.by/api/exrates/rates?ondate=" +
-            //    $"{date:yyyy-M-d}&periodicity=0");
-            if (response.IsSuccessStatusCode)
+        {
+            if (Connectivity.Current.NetworkAccess == NetworkAccess.Internet)
             {
-                rates = JsonSerializer.Deserialize<List<Rate>>(response.Content.ReadAsStream());
+                var message = await _httpClient.GetAsync(
+                   "https://www.nbrb.by/api/exrates/rates?ondate=" +
+                    $"{date:yyyy-M-d}&periodicity=0");
+                if (message.IsSuccessStatusCode)
+                {
+                    return JsonSerializer.Deserialize<List<Rate>>(message.Content.ReadAsStream()).
+                        Where(objId => listOfId.Contains(objId.Cur_ID)).ToList();
+                }
             }
-            return rates.Where(objId => listOfId.Contains(objId.Cur_ID)).ToList();
+            return null;
         }
     }
 }
