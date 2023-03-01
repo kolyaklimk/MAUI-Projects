@@ -23,7 +23,7 @@
         <Picker x:Name="pickerCurrency" Grid.Column="1" Grid.Row="1" 
                 BackgroundColor="#3b3b3b" 
                 VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
-                ItemDisplayBinding="{Binding Cur_Name}" SelectedItem="{Binding rate}"
+                ItemDisplayBinding="{Binding Cur_Name}" 
                 SelectedIndexChanged="pickerCurrency_SelectedIndexChanged"                
                 />
         <Grid Grid.Row="2" Grid.Column="1">
@@ -38,15 +38,15 @@
             </Grid.RowDefinitions>
             <Entry x:Name="firstEntry" Grid.Column="0" TextChanged="firstEntry_TextChanged"                   
                    HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-                   HorizontalOptions="Fill" VerticalOptions="End" 
-                    BackgroundColor="#3b3b3b" Keyboard="Numeric"/>
+                   HorizontalOptions="Fill" VerticalOptions="End" IsReadOnly="True"
+                    BackgroundColor="#3b3b3b" Keyboard="Numeric" MaxLength="80"/>
             <Label x:Name="firstLabel"  Grid.Row="1" 
                    HorizontalOptions="Center" VerticalOptions="Start"/>
             <Label x:Name="solve" Grid.Column="1" Text="=" 
                    HorizontalOptions="Center" VerticalOptions="End"/>
             <Entry x:Name="secondEntry" Grid.Column="3" IsReadOnly="True" BackgroundColor="#3b3b3b"
                    HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-                   HorizontalOptions="Fill" VerticalOptions="End" Keyboard="Numeric"/>
+                   HorizontalOptions="Fill" VerticalOptions="End"/>
             <Label x:Name="secondLabel" Grid.Column="2" Grid.Row="1" 
                    HorizontalOptions="Center" VerticalOptions="Start"/>
             <Button x:Name="changeMainConverter" Text="&lt;=>" TextColor="White"

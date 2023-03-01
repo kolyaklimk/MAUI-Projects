@@ -6,8 +6,13 @@
     <VerticalStackLayout>
         <Picker x:Name ="picker" 
                 Title="Choose" BackgroundColor="#202020" HorizontalTextAlignment="Center"   
-                SelectedIndexChanged="picker_SelectedIndexChanged"/>
-        <CollectionView x:Name="collection" BackgroundColor="#3b3b3b"/>
+                SelectedIndexChanged="picker_SelectedIndexChanged"
+                ItemDisplayBinding="{Binding Name}"/>
+        <CollectionView x:Name="collection" BackgroundColor="#3b3b3b">
+            <CollectionView.ItemTemplate>
+                
+            </CollectionView.ItemTemplate>
+        </CollectionView>
         <ListView/>
     </VerticalStackLayout>
 </ContentPage>

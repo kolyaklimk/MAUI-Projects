@@ -1,5 +1,6 @@
+using MyApplication.Pages.SQLiteService.Entities;
 using MyApplication.Pages.SQLiteService.Services;
-
+using System.Diagnostics; 
 namespace MyApplication;
 
 public partial class SQLitePage : ContentPage
@@ -10,10 +11,7 @@ public partial class SQLitePage : ContentPage
         InitializeComponent();
         _db = db;
         _db.Init();
-        foreach (var i in _db.GetAllSportTeams())
-        {
-            picker.Items.Add(i.Name);
-        }
+        picker.ItemsSource = _db.GetAllSportTeams().ToList();
     }
     private void picker_SelectedIndexChanged(object sender, EventArgs e)
     {

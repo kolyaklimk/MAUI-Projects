@@ -30,6 +30,11 @@ public partial class CurrencyConverterPage : ContentPage
             pickerCurrency.ItemsSource = picker.ToList();
             loadLabel.Text = "";
         }
+        firstEntry.Text = "";
+        secondEntry.Text = "";
+        firstLabel.Text = "";
+        secondLabel.Text = "";
+        firstEntry.IsReadOnly = true;
     }
 
     private void pickerCurrency_SelectedIndexChanged(object sender, EventArgs e)
@@ -42,6 +47,7 @@ public partial class CurrencyConverterPage : ContentPage
             firstLabel.Text = (pickerCurrency.SelectedItem as Rate).Cur_Abbreviation;
             secondLabel.Text = "BYN";
             mainConverter = true;
+            firstEntry.IsReadOnly = false;
         }
     }
     private void firstEntry_TextChanged(object sender, TextChangedEventArgs e)

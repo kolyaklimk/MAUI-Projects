@@ -23,7 +23,7 @@ namespace MyApplication.Pages.SQLiteService.Services
         }
         public IEnumerable<Member> GetSportTeamMembers(int id)
         {
-            return Db.Table<Member>().Where(objId => objId.SportTeamId == id).ToList();
+            return Db.Table<Member>().Where(objId => objId.SportTeamId == id).ToArray();
         }
         public void Init()
         {
