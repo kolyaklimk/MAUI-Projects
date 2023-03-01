@@ -1,5 +1,7 @@
 ﻿using NbrbAPI.Models;
-using Newtonsoft.Json;
+using System;
+using System.Diagnostics;
+using System.Text.Json;
 
 namespace MyApplication.Pages.CurrencyConverter.Services
 {
@@ -11,15 +13,20 @@ namespace MyApplication.Pages.CurrencyConverter.Services
         {
             _httpClient = httpClient;
         }
-        public IEnumerable<Rate> GetRates(DateTime date)
+        public async Task<IEnumerable<Rate>> GetRates(DateTime date)
         {            
             List<Rate> rates = new();
-            string message = _httpClient.GetAsync(
-                "https://www.nbrb.by/api/exrates/rates?ondate=" +
-                $"{date:yyyy-M-d}&periodicity=0").ToString();
-            if (message != null)
+            var message = new HttpRequestMessage(HttpMethod.Get, 
+                "https://www.nbrb.by/api/exrates/rates?ondate=" + 
+                $"{date:yyyy-M-d}&periodicity=0");
+            message.Headers.Add("Accept", "application/json");
+            var response = await _httpClient.SendAsync(message);
+            //var message = _httpClient.GetAsync(
+            //   "https://www.nbrb.by/api/exrates/rates?ondate=" +
+            //    $"{date:yyyy-M-d}&periodicity=0");
+            if (response.IsSuccessStatusCode)
             {
-                rates = JsonConvert.DeserializeObject<List<Rate>>(message);
+                rates = JsonSerializer.Deserialize<List<Rate>>(response.Content.ReadAsStream());
             }
             return rates.Where(objId => listOfId.Contains(objId.Cur_ID)).ToList();
         }

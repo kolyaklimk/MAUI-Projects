@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "up2RBeW4eKbbPO7Fw788dTnuhjm7tQ1pIAmtmCpzhEHloYDxWdGz7bXRMfGsY58AK6uspRvsw9O8+oUABd8v1w==",
+  "dgSpecHash": "YeGSkP5Bj5vrMWnSZjjC76FnXFcm2xWDx7v14L7BvuL+GHN+63ETtg+w7rzPPi1I17U+ZvXmKV4+uxXP9kGW7Q==",
   "success": true,
   "projectFilePath": "C:\\github\\MyApplication\\MyApplication\\MyApplication.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kolya\\.nuget\\packages\\ajaxcontroltoolkit\\20.1.0\\ajaxcontroltoolkit.20.1.0.nupkg.sha512",
     "C:\\Users\\kolya\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\kolya\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\kolya\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -155,5 +156,16 @@
     "C:\\Users\\kolya\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.14\\microsoft.netcore.app.runtime.win-x64.6.0.14.nupkg.sha512",
     "C:\\Users\\kolya\\.nuget\\packages\\microsoft.maui.controls.runtime.win\\6.0.552\\microsoft.maui.controls.runtime.win.6.0.552.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"AjaxControlToolkit 20.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-android31.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "AjaxControlToolkit",
+      "targetGraphs": [
+        "net6.0-android31.0"
+      ]
+    }
+  ]
 }

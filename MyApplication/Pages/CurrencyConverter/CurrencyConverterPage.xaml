@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyApplication.CurrencyConverterPage"
-             Title="CurrencyConverter">
+             Title="CurrencyConverter"
+             BackgroundColor="#202020">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.1*"/>
@@ -13,27 +15,45 @@
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <DatePicker x:Name="calendar" Format="d" DateSelected="DatePicker_DateSelected"                    
-                    MinimumDate="1/1/2000" Grid.Column="1" BackgroundColor="#3b3b3b"/>
-        <Picker x:Name="picker" Grid.Column="1" Title="Choose" Grid.Row="1" BackgroundColor="#3b3b3b" 
-                HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        <DatePicker x:Name="calendar" Format="d" DateSelected="calendar_DateSelected"                  
+                    MinimumDate="1/1/2000" Grid.Column="1" BackgroundColor="#3b3b3b"
+                    VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Picker x:Name="pickerCurrency" Grid.Column="1" Grid.Row="1" 
+                BackgroundColor="#3b3b3b" 
+                VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                ItemDisplayBinding="{Binding Cur_Name}" SelectedItem="{Binding rate}"
+                SelectedIndexChanged="pickerCurrency_SelectedIndexChanged"                
+                />
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
-                <ColumnDefinition Width="0.4*"/>
-                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="0.5*"/>
                 <ColumnDefinition/>
-                <ColumnDefinition Width="0.4*"/>
             </Grid.ColumnDefinitions>
-            <Entry Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <Label Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <Entry x:Name="firstEntry" Grid.Column="0" TextChanged="firstEntry_TextChanged"                   
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   HorizontalOptions="Fill" VerticalOptions="End" 
+                    BackgroundColor="#3b3b3b" /> 
+            <Label x:Name="firstLabel"  Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Start"
                    Text="USD"/>
-            <Label Grid.Column="2" Text="=" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <Entry Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <Label Grid.Column="4" HorizontalOptions="Center" VerticalOptions="Center"
-                   Text="руб"/>
+            <Label x:Name="solve" Grid.Column="1" Text="=" 
+                   HorizontalOptions="Center" VerticalOptions="End"/>
+            <Entry x:Name="secondEntry" Grid.Column="3" IsReadOnly="True" BackgroundColor="#3b3b3b"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   HorizontalOptions="Fill" VerticalOptions="End"/>
+            <Label x:Name="secondLabel" Grid.Column="2" Grid.Row="1" 
+                   HorizontalOptions="Center" VerticalOptions="Start"
+                   Text="BYN"/>
+            <Button x:Name="changeMainConverter" Text="Change" 
+                    Clicked="changeMainConverter_Clicked"
+                    VerticalOptions="End" BackgroundColor="#3b3b3b"
+                    Grid.Column="1" Grid.Row="1"/>
         </Grid>
     </Grid>
 </ContentPage>

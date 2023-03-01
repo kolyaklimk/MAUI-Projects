@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0-android31.0": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -2058,6 +2067,15 @@
       }
     },
     "net6.0-android31.0/android-arm": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -4114,6 +4132,15 @@
       }
     },
     "net6.0-android31.0/android-arm64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -6170,6 +6197,15 @@
       }
     },
     "net6.0-android31.0/android-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -8226,6 +8262,15 @@
       }
     },
     "net6.0-android31.0/android-x86": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -10282,6 +10327,15 @@
       }
     },
     "net6.0-android31.0/ios-arm64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -12338,6 +12392,15 @@
       }
     },
     "net6.0-android31.0/maccatalyst-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -14394,6 +14457,15 @@
       }
     },
     "net6.0-android31.0/win10-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -16450,6 +16522,15 @@
       }
     },
     "net6.0-ios16.1": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -16748,6 +16829,15 @@
       }
     },
     "net6.0-ios16.1/android-arm": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -17046,6 +17136,15 @@
       }
     },
     "net6.0-ios16.1/android-arm64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -17344,6 +17443,15 @@
       }
     },
     "net6.0-ios16.1/android-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -17642,6 +17750,15 @@
       }
     },
     "net6.0-ios16.1/android-x86": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -17940,6 +18057,15 @@
       }
     },
     "net6.0-ios16.1/ios-arm64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -18238,6 +18364,15 @@
       }
     },
     "net6.0-ios16.1/maccatalyst-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -18536,6 +18671,15 @@
       }
     },
     "net6.0-ios16.1/win10-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -18834,6 +18978,15 @@
       }
     },
     "net6.0-maccatalyst16.1": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -19238,6 +19391,15 @@
       }
     },
     "net6.0-maccatalyst16.1/android-arm": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -19551,6 +19713,15 @@
       }
     },
     "net6.0-maccatalyst16.1/android-arm64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -19864,6 +20035,15 @@
       }
     },
     "net6.0-maccatalyst16.1/android-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -20177,6 +20357,15 @@
       }
     },
     "net6.0-maccatalyst16.1/android-x86": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -20490,6 +20679,15 @@
       }
     },
     "net6.0-maccatalyst16.1/ios-arm64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -20800,6 +20998,15 @@
       }
     },
     "net6.0-maccatalyst16.1/maccatalyst-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -21113,6 +21320,15 @@
       }
     },
     "net6.0-maccatalyst16.1/win10-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -21426,6 +21642,15 @@
       }
     },
     "net6.0-windows10.0.19041": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -21955,6 +22180,15 @@
       }
     },
     "net6.0-windows10.0.19041/android-arm": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -22365,6 +22599,15 @@
       }
     },
     "net6.0-windows10.0.19041/android-arm64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -22775,6 +23018,15 @@
       }
     },
     "net6.0-windows10.0.19041/android-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -23185,6 +23437,15 @@
       }
     },
     "net6.0-windows10.0.19041/android-x86": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -23595,6 +23856,15 @@
       }
     },
     "net6.0-windows10.0.19041/ios-arm64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -24002,6 +24272,15 @@
       }
     },
     "net6.0-windows10.0.19041/maccatalyst-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -24412,6 +24691,15 @@
       }
     },
     "net6.0-windows10.0.19041/win10-x64": {
+      "AjaxControlToolkit/20.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AjaxControlToolkit.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -24829,6 +25117,20 @@
     }
   },
   "libraries": {
+    "AjaxControlToolkit/20.1.0": {
+      "sha512": "pW4bkn7IKznIDLS61WOdicrbIR8Njpc0omO71w+xGd+iRjz+41vf+s7PVFpFZ2CfqpdlQIJnObZb67XwarNNxg==",
+      "type": "package",
+      "path": "ajaxcontroltoolkit/20.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Web.config.transform",
+        "ajaxcontroltoolkit.20.1.0.nupkg.sha512",
+        "ajaxcontroltoolkit.nuspec",
+        "lib/net40/AjaxControlToolkit.dll",
+        "readme.txt"
+      ]
+    },
     "GoogleGson/2.9.0.1": {
       "sha512": "hztMZzgzX82HUORHX4YHOcfzF7yAOn8dWpXeYcrJa9sjw1qHfFpibrHeiWrk8aKn4C4IO6mBNOuaFiyS6/EOBA==",
       "type": "package",
@@ -28085,6 +28387,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-android31.0": [
+      "AjaxControlToolkit >= 20.1.0",
       "Microsoft.Extensions.Http >= 7.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
@@ -28093,6 +28396,7 @@
       "sqlite-net-pcl >= 1.8.116"
     ],
     "net6.0-ios16.1": [
+      "AjaxControlToolkit >= 20.1.0",
       "Microsoft.Extensions.Http >= 7.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
@@ -28102,6 +28406,7 @@
       "sqlite-net-pcl >= 1.8.116"
     ],
     "net6.0-maccatalyst16.1": [
+      "AjaxControlToolkit >= 20.1.0",
       "Microsoft.Extensions.Http >= 7.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
@@ -28111,6 +28416,7 @@
       "sqlite-net-pcl >= 1.8.116"
     ],
     "net6.0-windows10.0.19041": [
+      "AjaxControlToolkit >= 20.1.0",
       "Microsoft.Extensions.Http >= 7.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.552",
       "Microsoft.Maui.Extensions >= 6.0.552",
@@ -28181,6 +28487,10 @@
       "net6.0-android31.0": {
         "targetAlias": "net6.0-android",
         "dependencies": {
+          "AjaxControlToolkit": {
+            "target": "Package",
+            "version": "[20.1.0, )"
+          },
           "Microsoft.Extensions.Http": {
             "target": "Package",
             "version": "[7.0.0, )"
@@ -28299,6 +28609,10 @@
       "net6.0-ios16.1": {
         "targetAlias": "net6.0-ios",
         "dependencies": {
+          "AjaxControlToolkit": {
+            "target": "Package",
+            "version": "[20.1.0, )"
+          },
           "Microsoft.Extensions.Http": {
             "target": "Package",
             "version": "[7.0.0, )"
@@ -28398,6 +28712,10 @@
       "net6.0-maccatalyst16.1": {
         "targetAlias": "net6.0-maccatalyst",
         "dependencies": {
+          "AjaxControlToolkit": {
+            "target": "Package",
+            "version": "[20.1.0, )"
+          },
           "Microsoft.Extensions.Http": {
             "target": "Package",
             "version": "[7.0.0, )"
@@ -28498,6 +28816,10 @@
       "net6.0-windows10.0.19041": {
         "targetAlias": "net6.0-windows10.0.19041.0",
         "dependencies": {
+          "AjaxControlToolkit": {
+            "target": "Package",
+            "version": "[20.1.0, )"
+          },
           "Microsoft.Extensions.Http": {
             "target": "Package",
             "version": "[7.0.0, )"
@@ -28627,5 +28949,17 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"AjaxControlToolkit 20.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-android31.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "AjaxControlToolkit",
+      "targetGraphs": [
+        "net6.0-android31.0"
+      ]
+    }
+  ]
 }

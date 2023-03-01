@@ -1917,3 +1917,4 @@ C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\stamp\_GeneratePa
 C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\android\assets\Microsoft.Extensions.Http.dll
 C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\android\assets\Newtonsoft.Json.dll
+C:\github\MyApplication\MyApplication\obj\Debug\net6.0-android\android\assets\AjaxControlToolkit.dll

@@ -9,6 +9,6 @@ namespace MyApplication.Pages.CurrencyConverter.Services
 {
     public interface IRateService
     {
-        IEnumerable<Rate> GetRates(DateTime date);
+        Task<IEnumerable<Rate>> GetRates(DateTime date);
     }
 }
