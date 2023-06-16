@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"                          
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:models="clr-namespace:_153504_Klimkovich.UI.ViewModels"
+             x:DataType="models:SportTeamsViewModel"             
+             x:Class="_153504_Klimkovich.UI.Pages.SportTeamsPage"
+             xmlns:enty="clr-namespace:_153504_Klimkovich.Domain.Entities;assembly=153504_Klimkovich.Domain"
+             xmlns:converter="clr-namespace:_153504_Klimkovich.UI.ValueConverters"
+             BackgroundColor="#DFDFDF">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded"
+                                        Command="{Binding UpdateSportTeamListCommand}"/>
+    </ContentPage.Behaviors>
+
+    <ContentPage.Resources>
+        <converter:RateToColorValueConverter x:Key="ColorConverter"/>
+        <converter:ImageConverter x:Key="ImageConverter"/>
+    </ContentPage.Resources>
+
+    <Grid Grid.RowDefinitions="50,50,50,50,*"
+          RowSpacing="5" Padding="10">
+        <Picker x:Name="MyPicker"
+                Grid.Row="0"
+                ItemsSource="{Binding SportTeams}" 
+                ItemDisplayBinding="{Binding Name}"
+                SelectedItem="{Binding SelectedSportTeam}"
+                HorizontalOptions="Center"
+                BackgroundColor="#384D44">
+            <Picker.Behaviors>
+                <toolkit:EventToCommandBehavior EventName="SelectedIndexChanged"
+                                                Command="{Binding UpdateMembersListCommand}"/>
+            </Picker.Behaviors>
+        </Picker>
+        
+        <Button Grid.Row="1"
+                Text="New group"
+                Command="{Binding CreateSportTeamCommand}"/>
+
+        <Grid Grid.RowDefinitions="*,*"
+              Grid.Row="2"
+              IsVisible="{Binding IsVisible}">
+
+            <Label 
+                   Grid.Row="0"
+                   TextColor="Black"
+                   HorizontalOptions="Center">
+                <Label.Text>
+                    <MultiBinding StringFormat="{}Name:&#160; {0}">
+                        <Binding Path="SelectedSportTeam.Name" />
+                    </MultiBinding>
+                </Label.Text>
+            </Label>
+
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   TextColor="Black"
+                   HorizontalOptions="Center">
+                <Label.Text>
+                    <MultiBinding StringFormat="{}Kind of sport:&#160; {0}">
+                        <Binding Path="SelectedSportTeam.KindOfSport" />
+                    </MultiBinding>
+                </Label.Text>
+            </Label>
+
+        </Grid>
+
+        <Button Grid.Row="3"
+                Text="New item"
+                Command="{Binding CreateMemberCommand}"
+                IsVisible="{Binding IsVisible}"/>
+
+        <CollectionView x:Name="MyCollection" 
+                        ItemsSource="{Binding Members}"                        
+                        SelectionMode="None"
+                        Grid.Row="4">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"                                           
+                                   ItemSpacing="5"/>
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="enty:Member">
+                    <Border BackgroundColor="{Binding Points, Converter={StaticResource ColorConverter}}" 
+                            StrokeThickness="2" 
+                            Padding="2" HeightRequest="80">
+                        
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15"/>
+                        </Border.StrokeShape>
+                        
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType=
+                                {x:Type models:SportTeamsViewModel}}, Path=ShowDetailsCommand}"
+                                                  CommandParameter="{Binding}"/>                            
+                        </Border.GestureRecognizers>
+                        
+                        <Grid ColumnDefinitions="80,*" HeightRequest="70">
+                            <Image Source="{Binding Id, Converter={StaticResource ImageConverter}}"
+                                   HeightRequest="60"
+                                   Grid.Column="0"/>
+                            <Label Text="{Binding Name}"
+                                   TextColor="Black"
+                                   Grid.Column="1"
+                                   VerticalOptions="Center"
+                                   FontSize="20"/>                        
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
+</ContentPage>

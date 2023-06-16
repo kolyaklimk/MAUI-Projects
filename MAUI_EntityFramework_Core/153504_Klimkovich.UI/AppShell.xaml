@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="_153504_Klimkovich.UI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:_153504_Klimkovich.UI"
+    xmlns:pages="clr-namespace:_153504_Klimkovich.UI.Pages">
+
+    <FlyoutItem Title="Home"
+                Icon="home.png" > 
+        <Tab>   
+            <ShellContent ContentTemplate="{DataTemplate local:NewPage1}"/>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="SportTeam list"
+                Icon="list.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate pages:SportTeamsPage}"       
+                          Route="SportTeams" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>

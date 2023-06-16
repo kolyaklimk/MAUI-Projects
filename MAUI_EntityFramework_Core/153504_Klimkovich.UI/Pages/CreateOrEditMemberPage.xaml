@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_153504_Klimkovich.UI.Pages.CreateOrEditMemberPage"       
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:models="clr-namespace:_153504_Klimkovich.UI.ViewModels"
+             x:DataType="models:CreateOrEditMemberViewModel"
+             xmlns:converter="clr-namespace:_153504_Klimkovich.UI.ValueConverters"
+             BackgroundColor="#DFDFDF">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded"
+                                        Command="{Binding LoadToEditCommand}"/>
+    </ContentPage.Behaviors>
+
+    <ContentPage.Resources>
+        <converter:ImageConverter x:Key="ImageConverter"/>
+    </ContentPage.Resources>
+
+    <Grid Grid.RowDefinitions="200,50,50,50,50"
+          Grid.ColumnDefinitions="*,*">
+
+        <ImageButton Source="{Binding Member.Id, Converter={StaticResource ImageConverter}}"
+                     Grid.ColumnSpan="2"
+                     HorizontalOptions="Center" VerticalOptions="Center"
+                     Command="{Binding ChooseImageCommand}"/>
+
+        <Label Text="Name:&#160;"
+               Grid.Column="0"
+               Grid.Row="1"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               FontSize="20"
+               TextColor="Black"/>
+        <Entry x:Name="enty1" 
+               Text="{Binding Name}"
+               Grid.Column="1"
+               Grid.Row="1"
+               TextColor="Black"/>
+
+        <Label Text="Age:&#160;"
+               Grid.Column="0"
+               Grid.Row="2"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               FontSize="20"
+               TextColor="Black"/>
+        <Entry x:Name="enty2" 
+               Text="{Binding Age}"
+               Grid.Column="1"
+               Grid.Row="2"
+               TextColor="Black"/>
+
+        <Label Text="Points:&#160;"
+               Grid.Column="0"
+               Grid.Row="3"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               FontSize="20"
+               TextColor="Black"/>
+        <Entry x:Name="enty3" 
+               Text="{Binding Points}"
+               Grid.Column="1"
+               Grid.Row="3"
+               TextColor="Black"/>
+
+        <Button Command="{Binding CreateOrEditCommand}"
+                Clicked="Button_Clicked"
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                Text="OK"/>
+    </Grid>
+</ContentPage>

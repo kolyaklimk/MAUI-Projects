@@ -2,28 +2,27 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
-    <ActiveDebugFramework>net6.0-windows10.0.19041.0</ActiveDebugFramework>
+    <ActiveDebugFramework>net7.0-windows10.0.19041.0</ActiveDebugFramework>
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(TargetPlatformIdentifier)'=='iOS'">
-    <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
-    <PlatformTarget>arm64</PlatformTarget>
-  </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Pages\Calculator\CalculatorPage.xaml">
+    <MauiXaml Update="NewPage1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\CurrencyConverter\CurrencyConverterPage.xaml">
+    <MauiXaml Update="Pages\CreateOrEditMemberPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\ProgressBar\ProgressBarPage.xaml">
+    <MauiXaml Update="Pages\CreateSportTeamPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\SQLiteService\SQLitePage.xaml">
+    <MauiXaml Update="Pages\MemberDetailsPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\SportTeamsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

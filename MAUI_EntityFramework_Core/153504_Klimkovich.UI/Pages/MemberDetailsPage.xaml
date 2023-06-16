@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_153504_Klimkovich.UI.Pages.MemberDetailsPage"        
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:models="clr-namespace:_153504_Klimkovich.UI.ViewModels"
+             xmlns:converter="clr-namespace:_153504_Klimkovich.UI.ValueConverters"
+             x:DataType="models:MemberDetailsViewModel">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded"
+                                        Command="{Binding LoadSportTeamsCommand}"/>
+    </ContentPage.Behaviors>
+
+    <ContentPage.Resources>
+        <converter:ImageConverter x:Key="ImageConverter"/>
+    </ContentPage.Resources>
+
+    <Grid Grid.RowDefinitions="200,30,30,30,50,50"
+          BackgroundColor="#DFDFDF"
+          RowSpacing="10">
+        <ImageButton Source="{Binding Member.Id, Converter={StaticResource ImageConverter}}"
+                     HorizontalOptions="Center" VerticalOptions="Center"
+                     Command="{Binding ChooseImageCommand}"/>    
+        
+        <Label Grid.Row="1"
+               TextColor="Black"
+               FontSize="20"
+               HorizontalOptions="Center">
+            <Label.Text>
+                <MultiBinding StringFormat="{}Name:&#160; {0}">
+                    <Binding Path="Member.Name" />
+                </MultiBinding>
+            </Label.Text>
+        </Label>
+
+        <Label Grid.Row="2"
+               FontSize="20"
+               TextColor="Black"
+               HorizontalOptions="Center">
+            <Label.Text>
+                <MultiBinding StringFormat="{}Age:&#160; {0}">
+                    <Binding Path="Member.Age" />
+                </MultiBinding>
+            </Label.Text>
+        </Label>
+
+        <Label Grid.Row="3"
+               TextColor="Black"
+               FontSize="20"
+               HorizontalOptions="Center">
+            <Label.Text>
+                <MultiBinding StringFormat="{}Points:&#160; {0}">
+                    <Binding Path="Member.Points" />
+                </MultiBinding>
+            </Label.Text>
+        </Label>
+
+        <Button Text="Edit"
+                Grid.Row="4"
+                Command="{Binding EditMemberCommand}"/>
+
+        <Grid Grid.ColumnDefinitions="100,100,100"
+              Grid.Row="5"
+              HorizontalOptions="Center">
+            <Label Text="Move to:&#160;"
+                   Grid.Column="0"
+                   TextColor="Black"
+                   FontSize="20"
+                   VerticalOptions="Center"/>
+            <Picker Grid.Column="1"
+                    BackgroundColor="#384D44"
+                    ItemsSource="{Binding SportTeams}" 
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedItem="{Binding SelectedSportTeam}">
+            </Picker>
+            <Button Text="OK"
+                    Grid.Column="2"
+                    Command="{Binding ChangeSportTeamCommand}"/>
+        </Grid>
+    </Grid>
+</ContentPage>
