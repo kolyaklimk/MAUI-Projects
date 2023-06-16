@@ -1,1 +1,0 @@
-C:\github\MyApplication\MyApplication\MyApplication.csproj;x64
