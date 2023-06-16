@@ -1,2 +1,2 @@
 # MAUI-Projects
-This repository contains various projects and labs on .NET MAUI
+This repository contains various projects on .NET MAUI
