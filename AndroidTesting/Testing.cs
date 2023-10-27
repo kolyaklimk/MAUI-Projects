@@ -19,8 +19,6 @@ namespace AndroidTesting
             List<double> Mmil = new();
             List<long> Otik = new();
             List<long> Mtik = new();
-            List<double> OG = new();
-            List<double> MG = new();
             List<double> OP = new();
             List<double> MP = new();
 
@@ -32,29 +30,25 @@ namespace AndroidTesting
                     Factorial(n);
                 }
                 stopwatch.Stop();
-                Omil.Add(stopwatch.ElapsedTicks * 1000.0 / Stopwatch.Frequency);
+                Omil.Add(stopwatch.ElapsedMilliseconds);
                 Otik.Add(stopwatch.ElapsedTicks);
-                OG.Add(stopwatch.ElapsedTicks / (double)Omil.Last() / 1000.0);
                 OP.Add((long)((n - 1) * size / (Omil.Last() / 1000.0)));
 
                 stopwatch = Stopwatch.StartNew();
                 Parallel.For(0, size, i => Factorial(n));
                 stopwatch.Stop();
-                Mmil.Add(stopwatch.ElapsedTicks * 1000.0 / Stopwatch.Frequency);
+                Mmil.Add(stopwatch.ElapsedMilliseconds);
                 Mtik.Add(stopwatch.ElapsedTicks);
-                MG.Add(stopwatch.ElapsedTicks / (double)Mmil.Last() / 1000.0);
                 MP.Add((long)((n - 1) * size / (Mmil.Last() / 1000.0)));
             }
 
             stringBuilder.AppendLine("Однопоточный режим:");
             stringBuilder.AppendLine($"Время: {Omil.Average()} мс;");
             stringBuilder.AppendLine($"Кол-во тактов: {Otik.Average()};");
-            stringBuilder.AppendLine($"Частота: {OG.Average()} MГц;");
             stringBuilder.AppendLine($"Пропускная способность: {OP.Average()} операций в секунду;");
             stringBuilder.AppendLine("\nМногопоточный режим:");
             stringBuilder.AppendLine($"Время: {Mmil.Average()} мс;");
             stringBuilder.AppendLine($"Кол-во тактов: {Mtik.Average()};");
-            stringBuilder.AppendLine($"Частота: {MG.Average()} MГц;");
             stringBuilder.AppendLine($"Пропускная способность: {MP.Average()} операций в секунду;");
 
             return stringBuilder.ToString();
