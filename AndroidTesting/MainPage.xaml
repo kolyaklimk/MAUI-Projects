@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AndroidTesting.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+            
+            <Entry x:Name="NumberEntry2" 
+                   Placeholder="Количество повторений теста" 
+                   Keyboard="Numeric" />
+
+            <Entry x:Name="NumberEntry" 
+                   Placeholder="Умножить кол-во вычислений (169) на:" 
+                   Keyboard="Numeric" />
+
+            <Button x:Name="CounterBtn" 
+                    Text="Запустить тест"
+                    Clicked="OnCounterClicked" 
+                    HorizontalOptions="Center" />
+
+            <Label x:Name="ResultLabel" 
+                   Text="" 
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center" 
+                   TextType="Text" 
+                   LineBreakMode="WordWrap" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
